@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: #0f0c29;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    color: #ffffff;
+    padding: 10px;
+}
+
+.calc {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calc h1 {
+    font-size: 60px;
+}
+
+.h1 {
+    color: yellow;
+}
+
+.input {
+    /* Other styles ... */
+    display: flex;
+    align-items: center;
+    /* Ensure inputs and button are in one row */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+}
+
+.input input {
+    flex: 1;
+    margin-left: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.input button {
+    background-color: #ffff76;
+    border: 0;
+    outline: 0;
+    padding: 15px 35px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+
+.input input::-webkit-calender-picker-indicator {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100%n - 10px);
+    background-size: 30px;
+    cursor: pointer;
+}
+
+#res {
+    font-size: 20px;
+    color: #ffff76;
+    margin-top: 20px; /* Adjust spacing as needed */
+    width: 100%;
+    text-align: left; /* Ensure text starts from the left */
+}
